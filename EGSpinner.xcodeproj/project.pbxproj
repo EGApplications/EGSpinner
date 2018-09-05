@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6CBF12C7214078D0001B922F /* EGSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBF12C5214078D0001B922F /* EGSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CBF12D0214079E4001B922F /* EGCleverProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF12CD214079E3001B922F /* EGCleverProgress.m */; };
+		6CBF12D1214079E4001B922F /* EGCleverProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBF12CE214079E3001B922F /* EGCleverProgress.h */; };
+		6CBF12D2214079E4001B922F /* closeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CBF12CF214079E3001B922F /* closeIcon@2x.png */; };
+		6CBF12D521407D55001B922F /* EGSpinnerLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBF12D321407D55001B922F /* EGSpinnerLayer.h */; };
+		6CBF12D621407D55001B922F /* EGSpinnerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF12D421407D55001B922F /* EGSpinnerLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CBF12C2214078D0001B922F /* EGSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EGSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBF12C5214078D0001B922F /* EGSpinner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGSpinner.h; sourceTree = "<group>"; };
 		6CBF12C6214078D0001B922F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CBF12CD214079E3001B922F /* EGCleverProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGCleverProgress.m; sourceTree = "<group>"; };
+		6CBF12CE214079E3001B922F /* EGCleverProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGCleverProgress.h; sourceTree = "<group>"; };
+		6CBF12CF214079E3001B922F /* closeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeIcon@2x.png"; sourceTree = "<group>"; };
+		6CBF12D321407D55001B922F /* EGSpinnerLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGSpinnerLayer.h; sourceTree = "<group>"; };
+		6CBF12D421407D55001B922F /* EGSpinnerLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGSpinnerLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +56,11 @@
 		6CBF12C4214078D0001B922F /* EGSpinner */ = {
 			isa = PBXGroup;
 			children = (
+				6CBF12CF214079E3001B922F /* closeIcon@2x.png */,
+				6CBF12CE214079E3001B922F /* EGCleverProgress.h */,
+				6CBF12CD214079E3001B922F /* EGCleverProgress.m */,
+				6CBF12D321407D55001B922F /* EGSpinnerLayer.h */,
+				6CBF12D421407D55001B922F /* EGSpinnerLayer.m */,
 				6CBF12C5214078D0001B922F /* EGSpinner.h */,
 				6CBF12C6214078D0001B922F /* Info.plist */,
 			);
@@ -59,7 +74,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBF12D1214079E4001B922F /* EGCleverProgress.h in Headers */,
 				6CBF12C7214078D0001B922F /* EGSpinner.h in Headers */,
+				6CBF12D521407D55001B922F /* EGSpinnerLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBF12D2214079E4001B922F /* closeIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBF12D0214079E4001B922F /* EGCleverProgress.m in Sources */,
+				6CBF12D621407D55001B922F /* EGSpinnerLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +284,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EGSpinner/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,6 +309,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EGSpinner/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
