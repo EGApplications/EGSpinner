@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 #1.
 s.name               = "EGSpinner"
 #2.
-s.version            = "1.0.0"
+s.version            = "1.0.1"
 #3.
 s.summary         = "Simple spinner button with options"
 #4.
