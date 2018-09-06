@@ -23,7 +23,7 @@
         self.cornerRadius = 20;
         self.fillColor = [UIColor clearColor].CGColor;
         self.strokeColor = [UIColor whiteColor].CGColor;
-        self.lineWidth = 4;
+        self.lineWidth = 2;
         self.lineCap = kCALineCapRound;
         self.strokeStart = 0;
         self.strokeEnd = 0.01;
@@ -41,11 +41,11 @@
 }
 
 - (void) spinWithAngle:(CGFloat)angle {
-    self.strokeEnd = 0.33;
+    self.strokeEnd = 0.5;
     CABasicAnimation *rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.toValue = @(M_PI-0.5);
-    rotationAnimation.duration = 0.4;
+    rotationAnimation.duration = 0.3;
     rotationAnimation.cumulative = YES;
     rotationAnimation.repeatCount = HUGE;
     [self addAnimation:rotationAnimation forKey:nil];

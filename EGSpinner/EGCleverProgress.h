@@ -25,6 +25,9 @@ static NSString* hasBeenDownloadedNotification = @"EGCleverProgressHasBeenDownlo
 
 @interface EGCleverProgress : UIView
 
+// initialization
+- (instancetype)init;
+
 // system
 @property (strong, nonatomic) UIView* cleverView;
 @property (strong, nonatomic) UILabel* alertLabel;

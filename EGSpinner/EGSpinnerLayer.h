@@ -15,5 +15,4 @@
 - (void) startSpin;
 - (void) stopSpin;
 
-
 @end

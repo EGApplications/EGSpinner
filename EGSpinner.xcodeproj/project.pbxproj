@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		6CBF12C7214078D0001B922F /* EGSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBF12C5214078D0001B922F /* EGSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CBF12D0214079E4001B922F /* EGCleverProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF12CD214079E3001B922F /* EGCleverProgress.m */; };
-		6CBF12D1214079E4001B922F /* EGCleverProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBF12CE214079E3001B922F /* EGCleverProgress.h */; };
+		6CBF12D1214079E4001B922F /* EGCleverProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBF12CE214079E3001B922F /* EGCleverProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CBF12D2214079E4001B922F /* closeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CBF12CF214079E3001B922F /* closeIcon@2x.png */; };
-		6CBF12D521407D55001B922F /* EGSpinnerLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBF12D321407D55001B922F /* EGSpinnerLayer.h */; };
+		6CBF12D521407D55001B922F /* EGSpinnerLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBF12D321407D55001B922F /* EGSpinnerLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CBF12D621407D55001B922F /* EGSpinnerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF12D421407D55001B922F /* EGSpinnerLayer.m */; };
+		6CBF133221411B07001B922F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBF133121411B07001B922F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6CBF12CF214079E3001B922F /* closeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeIcon@2x.png"; sourceTree = "<group>"; };
 		6CBF12D321407D55001B922F /* EGSpinnerLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGSpinnerLayer.h; sourceTree = "<group>"; };
 		6CBF12D421407D55001B922F /* EGSpinnerLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGSpinnerLayer.m; sourceTree = "<group>"; };
+		6CBF133121411B07001B922F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBF133221411B07001B922F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				6CBF12C4214078D0001B922F /* EGSpinner */,
 				6CBF12C3214078D0001B922F /* Products */,
+				6CBF133021411B07001B922F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				6CBF12C6214078D0001B922F /* Info.plist */,
 			);
 			path = EGSpinner;
+			sourceTree = "<group>";
+		};
+		6CBF133021411B07001B922F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CBF133121411B07001B922F /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +203,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -208,10 +222,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "x86_64 arm64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -252,7 +268,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -263,10 +281,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "x86_64 arm64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -277,11 +297,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6SF935PV55;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EGSpinner/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -290,10 +312,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evsglukhov.EGSpinner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "x86_64 arm64";
 			};
 			name = Debug;
 		};
@@ -302,11 +328,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6SF935PV55;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EGSpinner/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -315,10 +343,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evsglukhov.EGSpinner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "x86_64 arm64";
 			};
 			name = Release;
 		};
